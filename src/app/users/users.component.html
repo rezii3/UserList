@@ -1,0 +1,44 @@
+<div class="container">
+<div class="Titles">
+<div class="left">
+    <h1>All Users</h1>
+</div>
+<div class="right">
+    <a href="">Import</a>
+    <a href="">Segments</a>
+    <a href="">Table settings</a>
+</div>
+</div>
+</div>
+<div class="container_search">
+    <div class="search">
+<select id="user" name="users">
+  <option value="all">All Users</option>
+  <option value="barbar">barbar</option>
+  <option value="adel">adel</option>
+  <option value="alies">alies</option>
+</select>
+        <input  type="search" name="" id="quick" placeholder="Quick search">
+        <a href="">➕add filters</a>
+    </div>
+    </div>
+<div class="container_table">
+    <table>
+        <tr>
+        <th>Profile</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Albums</th>
+          <th>id</th>
+        </tr>
+        <tr *ngFor=" let user of UsersList.getData();">
+        <td><img class="userImage" src="{{user.profileImage}}" alt=""></td>
+          <td>{{user.fullName}}<span>/{{user.jobTitle}}</span></td>
+          <td>{{user.email}}</td>
+          <td>{{user.albums}}</td>
+          <td>{{user.id}}</td>
+          <button (click)="deleteUser()">deleteUser</button>
+          <button (click)="updateUser()">update</button>
+        </tr>
+      </table>
+</div>

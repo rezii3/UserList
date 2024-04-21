@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="Titles">
+    <div class="left">
+        <h1>All Companys</h1>
+    </div>
+    <div class="right">
+        <a href="">Import</a>
+        <a href="">Segments</a>
+        <a href="">Table settings</a>
+    </div>
+    </div>
+    </div>
+    <div class="container_search">
+        <div class="search">
+    <select id="user" name="users">
+      <option value="all">All Companys</option>
+      <option value="barbar">ewrwe</option>
+      <option value="adel">rwegw</option>
+      <option value="alies">fgwegfw</option>
+    </select>
+            <input  type="search" name="" id="quick" placeholder="Quick search">
+            <a href="">➕add filters</a>
+        </div>
+        </div>
+    <div class="container_table">
+        <table>
+            <tr>
+              <th>company</th>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Category</th>
+              <th>Employes</th>
+            </tr>
+            <tr *ngFor=" let comp of companys">
+            <td><img class="userImage" src="{{comp.companyImage}}" alt=""></td>
+              <td>{{comp.companyName}}</td>
+              <td>{{comp.companyLocation}}</td>
+              <td>{{comp.companyCategory}}</td>
+              <td>{{comp.companyEmployeCount}}</td>
+            </tr>
+          </table>
+    </div>

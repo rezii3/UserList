@@ -1,0 +1,24 @@
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+}
+a:hover{
+   border-bottom: 2px solid rgb(0, 98, 255);
+}
+.nav-bar{
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 1px solid black;
+}
+
+img{
+    background-color: white;
+    height: 60px;
+    width: 200px;
+    padding: 5px 10px;
+}
